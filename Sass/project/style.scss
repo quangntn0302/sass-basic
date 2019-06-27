@@ -1,0 +1,253 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+$anhlogo: "images/logo.png";
+
+// end resert css
+$mauxanhdam: #2d3e50;
+$mauchu: #2d3e50;
+$mauchutrang: white;
+$maulogo: #19bd9b;
+$fontchu: 'Lato', sans-serif;
+$cochunho: 13px;
+$cochuvua: 14px;
+$cochumenu: 15px;
+$topheight: 50px;
+$maunut: #21303f;
+$logoheight: 90px;
+$cochutieude: 30px;
+$nhat: #a1b1bc;
+$maunenxam: #f9fafb;
+$tieudeheight: 120px;
+$tieudeheightmoblie: 26px;
+// end bien css
+
+@mixin reset(){
+    margin: 0px;
+    padding: 0px;
+}
+@mixin resetmoblie(){
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+//code dung lai
+
+body{
+    font-family: $fontchu;
+    font-size: $cochunho;
+    overflow: hidden;
+}
+.top{
+    height: $topheight;
+    line-height: $topheight;
+    background-color: $mauxanhdam;
+    color: $mauchutrang;
+    //end css cho phan top
+    .top-ngonngu{
+        position: relative;
+        //end css cho phan top-ngonngu
+
+        b{
+            cursor: pointer;
+            font-size: $cochuvua;
+        }
+        //end css cho the b trong phan top-cacngonngu
+
+        .cacngonngu{
+            position: absolute;
+            width: 285px;
+            top: 50px;
+            line-height: 15px;
+            border-bottom: 1px solid gray;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            z-index: 2;
+            background-color: $mauxanhdam;
+            //end css cho phan cacngonngu trong phan top-cacngonngu
+            a{
+                display: block;
+                padding: 10px 10px;
+                color: $mauchutrang;
+                font-size: $cochunho;
+                text-decoration: none;
+                font-weight: bold;
+                border-top: 1px solid gray;
+                //end css cho the a trong phan cac ngonngu
+            }
+        }
+    }
+    .phai{
+        .nut{
+            display: inline;
+            a.btn{
+                font-size: $cochunho;
+                color: $mauchutrang;
+                background-color: $maunut;
+                height: 30px;
+                padding: auto 11px;
+                border: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-right: 16px;
+                i{
+                    padding-right: 10px;
+                    color: $maulogo;
+                }
+            }
+        }
+        .caclink{
+            display: inline;
+            ul{
+                display: inline;
+                li{
+                    display: inline;
+                    list-style-type: none;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: $cochunho;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menuandlogo{
+    height: $logoheight;
+    line-height: $logoheight;
+    .menutop{
+       @include reset;
+        a.navbar-brand{
+            @include reset;
+        }
+        .timkiem{
+            i{
+                font-size: $cochumenu;
+                color: $maulogo;
+            }
+        }
+        ul.menuphai{
+            li.nav-item{
+                a.nav-link{
+                    @include reset;
+                    font-size: $cochumenu;
+                    padding-left: 10px;
+                    padding-right: 20px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: $mauxanhdam;
+                }
+            }
+        }
+    }
+}
+// xu ly menu va logo
+
+.tieude{
+    height: $tieudeheight;
+    line-height: $tieudeheight;
+    background-color: $maunenxam;
+    .trai{
+        @include reset();
+        h2{
+            @include reset();
+            height: $tieudeheight;
+            line-height: $tieudeheight;
+            font-size: $cochutieude;
+            color: $mauxanhdam;
+        }
+        a{
+            text-decoration: none;
+            color: $mauxanhdam;
+            i{
+                border: 1px solid $maunenxam;
+                background-color: $mauchutrang;
+                border-radius: 5px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                width: 30px;
+                padding: 5px 10px;
+                font-size: $cochumenu;
+                box-sizing: border-box;
+                display: inline-block;
+                @include reset();
+            }
+        }
+    }
+    .phai{
+        @include reset();
+        nav{
+            @include reset();
+            ol.breadcrumb{
+                background-color: transparent;
+                @include reset();
+                li.breadcrumb-item{
+                    font-size: $cochuvua;
+                    @include reset();
+                    &:before{
+                        display: inline-block;
+                        padding-right: .5rem;
+                        padding-left: .5rem;
+                        color: #818a91;
+                        content: "\f105";
+                        font: normal normal normal 14px/1 FontAwesome;
+                    }
+                    &:nth-child(1):before{
+                        content: "";
+                        @include reset();
+                    }
+                    a{
+                        color: gray;
+                        text-decoration: none;
+                        @include reset();
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slideanh{
+
+    .slide{
+        a.carousel-control{
+            background: none;
+        }
+        a.left.carousel-control{
+            span.icon-prev{
+                color: black;
+                background-color: white;
+                padding: 5px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                &:before{
+                    display: block;
+                    margin-top: -8px
+                }
+            } 
+
+        }
+        a.right.carousel-control{
+            span.icon-next{
+                color: black;
+                background-color: white;
+                padding: 5px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                &:before{
+                    display: block;
+                    margin-top: -8px
+                }
+            }
+        }
+
+    }
+}
+
+@import "btmoblie";

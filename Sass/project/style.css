@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  overflow-x: hidden; }
+
+.top {
+  height: 50px;
+  line-height: 50px;
+  background-color: #2d3e50;
+  color: white; }
+  .top .top-ngonngu {
+    position: relative; }
+    .top .top-ngonngu b {
+      cursor: pointer;
+      font-size: 14px; }
+    .top .top-ngonngu .cacngonngu {
+      position: absolute;
+      width: 285px;
+      top: 50px;
+      line-height: 15px;
+      border-bottom: 1px solid gray;
+      border-left: 1px solid gray;
+      border-right: 1px solid gray;
+      z-index: 2;
+      background-color: #2d3e50; }
+      .top .top-ngonngu .cacngonngu a {
+        display: block;
+        padding: 10px 10px;
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: bold;
+        border-top: 1px solid gray; }
+  .top .phai .nut {
+    display: inline; }
+    .top .phai .nut a.btn {
+      font-size: 13px;
+      color: white;
+      background-color: #21303f;
+      height: 30px;
+      padding: auto 11px;
+      border: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 16px; }
+      .top .phai .nut a.btn i {
+        padding-right: 10px;
+        color: #19bd9b; }
+  .top .phai .caclink {
+    display: inline; }
+    .top .phai .caclink ul {
+      display: inline; }
+      .top .phai .caclink ul li {
+        display: inline;
+        list-style-type: none; }
+        .top .phai .caclink ul li a {
+          color: white;
+          text-decoration: none;
+          font-size: 13px;
+          padding-right: 15px; }
+
+.menuandlogo {
+  height: 90px;
+  line-height: 90px; }
+  .menuandlogo .menutop {
+    margin: 0px;
+    padding: 0px; }
+    .menuandlogo .menutop a.navbar-brand {
+      margin: 0px;
+      padding: 0px; }
+    .menuandlogo .menutop .timkiem i {
+      font-size: 15px;
+      color: #19bd9b; }
+    .menuandlogo .menutop ul.menuphai li.nav-item a.nav-link {
+      margin: 0px;
+      padding: 0px;
+      font-size: 15px;
+      padding-left: 10px;
+      padding-right: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #2d3e50; }
+
+.tieude {
+  height: 120px;
+  line-height: 120px;
+  background-color: #f9fafb; }
+  .tieude .trai {
+    margin: 0px;
+    padding: 0px; }
+    .tieude .trai h2 {
+      margin: 0px;
+      padding: 0px;
+      height: 120px;
+      line-height: 120px;
+      font-size: 30px;
+      color: #2d3e50; }
+    .tieude .trai a {
+      text-decoration: none;
+      color: #2d3e50; }
+      .tieude .trai a i {
+        border: 1px solid #f9fafb;
+        background-color: white;
+        border-radius: 5px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        width: 30px;
+        padding: 5px 10px;
+        font-size: 15px;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0px;
+        padding: 0px; }
+  .tieude .phai {
+    margin: 0px;
+    padding: 0px; }
+    .tieude .phai nav {
+      margin: 0px;
+      padding: 0px; }
+      .tieude .phai nav ol.breadcrumb {
+        background-color: transparent;
+        margin: 0px;
+        padding: 0px; }
+        .tieude .phai nav ol.breadcrumb li.breadcrumb-item {
+          font-size: 14px;
+          margin: 0px;
+          padding: 0px; }
+          .tieude .phai nav ol.breadcrumb li.breadcrumb-item:before {
+            display: inline-block;
+            padding-right: .5rem;
+            padding-left: .5rem;
+            color: #818a91;
+            content: "\f105";
+            font: normal normal normal 14px/1 FontAwesome; }
+          .tieude .phai nav ol.breadcrumb li.breadcrumb-item:nth-child(1):before {
+            content: "";
+            margin: 0px;
+            padding: 0px; }
+          .tieude .phai nav ol.breadcrumb li.breadcrumb-item a {
+            color: gray;
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px; }
+
+.slideanh .slide a.carousel-control {
+  background: none; }
+.slideanh .slide a.left.carousel-control span.icon-prev {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px; }
+  .slideanh .slide a.left.carousel-control span.icon-prev:before {
+    display: block;
+    margin-top: -8px; }
+.slideanh .slide a.right.carousel-control span.icon-next {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px; }
+  .slideanh .slide a.right.carousel-control span.icon-next:before {
+    display: block;
+    margin-top: -8px; }
+
+@media (max-width: 576px) {
+  .top {
+    height: auto;
+    text-align: center; }
+    .top .top-ngonngu .cacngonngu {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+      width: 100%;
+      border: none; }
+      .top .top-ngonngu .cacngonngu a {
+        color: white;
+        border: none; }
+    .top .caclink {
+      display: inline; }
+      .top .caclink ul {
+        display: inline; }
+        .top .caclink ul li {
+          display: inline;
+          list-style-type: none; }
+          .top .caclink ul li a {
+            padding-right: 13px !important; }
+
+  .menuandlogo {
+    height: auto;
+    border-bottom: 1px solid #19bd9b; }
+    .menuandlogo .menutop {
+      padding: 10px 0; }
+      .menuandlogo .menutop .timkiem {
+        height: 45px;
+        line-height: 45px; }
+    .menuandlogo ul.menuphai {
+      margin: 0px !important;
+      padding: 0px !important; }
+      .menuandlogo ul.menuphai li.nav-item {
+        margin: 0px !important;
+        padding: 0px !important; }
+        .menuandlogo ul.menuphai li.nav-item a.nav-link {
+          height: 45px;
+          line-height: 45px;
+          margin: 0px !important;
+          padding: 0px !important; }
+
+  .tieude .phai {
+    border-top: 1px solid #19bd9b; }
+    .tieude .phai nav {
+      padding-left: 30%; }
+      .tieude .phai nav .breadcrumb {
+        height: 26px;
+        line-height: 26px; }
+        .tieude .phai nav .breadcrumb li a {
+          color: #19bd9b !important; } }
+
+/*# sourceMappingURL=style.css.map */

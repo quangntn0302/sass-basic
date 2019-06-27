@@ -1,0 +1,30 @@
+.jumbotron {
+  width: 900px;
+  margin: auto;
+  background: #699; }
+  .jumbotron img {
+    float: left;
+    width: 100px;
+    margin-right: 5px; }
+  .jumbotron h1 {
+    color: #c69; }
+    .jumbotron h1:hover {
+      color: black; }
+    .jumbotron h1:before {
+      content: "abc"; }
+    .jumbotron h1 p {
+      color: black;
+      font-family: tahoma;
+      font-size: 13px;
+      font-weight: bold;
+      font-style: italic; }
+
+.khac {
+  width: 500px;
+  margin: auto; }
+  .khac img {
+    float: left;
+    width: 200px;
+    margin-right: 30px; }
+
+/*# sourceMappingURL=1.css.map */

@@ -1,0 +1,28 @@
+.container {
+  background-color: gold;
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  position: relative; }
+  .container:after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 500px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    opacity: 0.5; }
+  .container .pesudo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-family: tahoma;
+    font-size: 15px;
+    text-decoration: none;
+    color: violet; }
+    .container .pesudo:hover {
+      color: black; }
+
+/*# sourceMappingURL=pesudo.css.map */

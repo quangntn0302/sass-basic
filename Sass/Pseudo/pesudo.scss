@@ -1,0 +1,35 @@
+$font_text: tahoma;
+$font_text_size: 15px;
+
+.container{
+    background-color: gold;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    &:after{
+        position: absolute;
+        content: "";
+        background-color: black;
+        width: 500px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+    .pesudo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        font : {
+            family: $font_text;
+            size: $font_text_size;
+        }
+        text-decoration: none;
+        color: violet;
+        &:hover{
+            color: black;
+        }
+    }
+}

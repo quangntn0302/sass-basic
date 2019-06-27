@@ -1,0 +1,56 @@
+$mx: #c69;
+
+@mixin anhcanhtrai() {
+    float:left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+@mixin anhcanhtrai2($mp) {
+    float:left;
+    width: 100px;
+    margin-right: $mp;
+}
+
+@mixin anhcanhtrai3($rong,$mp){
+    float: left;
+    width: $rong;
+    margin-right: $mp;
+}
+
+.jumbotron{
+    width: 900px;
+    margin: auto;
+    background: #699;
+
+    img{
+        @include anhcanhtrai2(5px);
+    }
+
+    h1{
+        color: $mx;
+        &:hover{
+            color: black;
+        }
+        &:before{
+            content: "abc";
+        }
+        p {
+            color: black;
+            font : {
+                family: tahoma;
+                size: 13px;
+                weight: bold;
+                style: italic;
+            }
+        }
+    }
+}
+
+.khac{
+    width: 500px;
+    margin: auto;
+    img{
+        @include anhcanhtrai3(200px, 30px);
+    }
+}

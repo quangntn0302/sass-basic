@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,QAAQ;EACJ,KAAK,EAJO,MAAM;EAKlB,MAAM,EAAE,IAAI;EACZ,aAAI;IACA,gBAAgB,EAAE,SAAS;IAC3B,KAAK,EAAE,gBAA+C;IACtD,YAAY,EARJ,IAAI;IASZ,KAAK,EAAE,IAAI;IACX,0BAAc;MACV,YAAY,EAAE,CAAC",
+"sources": ["tinhtoan.scss"],
+"names": [],
+"file": "tinhtoan.css"
+}

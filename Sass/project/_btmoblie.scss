@@ -1,0 +1,71 @@
+@media (max-width: 576px){
+    .top{
+        height: auto;
+        text-align: center;
+        .top-ngonngu{
+            .cacngonngu{
+                position: static;
+                visibility: visible;
+                opacity: 1;
+                width: 100%;
+                border: none;
+                a{
+                    color: $mauchutrang;
+                    border: none;
+                }
+            }
+        }
+        .caclink{
+            display: inline;
+            ul{
+                display: inline;
+                li{
+                    display: inline;
+                    list-style-type: none;
+                    a{
+                        padding-right: 13px !important;
+                    }
+                }
+            }
+        }
+    }
+    .menuandlogo{
+        height: auto;
+        border-bottom: 1px solid $maulogo;
+        .menutop{
+            padding: 10px 0;
+            .timkiem{
+                height: $logoheight/2;
+                line-height: $logoheight/2;
+            }
+        }
+        ul.menuphai{
+            @include resetmoblie;
+            li.nav-item{
+                @include resetmoblie;
+                a.nav-link{
+                    height: $logoheight/2;
+                    line-height: $logoheight/2;
+                    @include resetmoblie;
+                }
+            }
+        }
+    }
+    .tieude{
+        .phai{
+            border-top: 1px solid $maulogo;
+            nav{
+                padding-left: 30%;
+                .breadcrumb{
+                    height: $tieudeheightmoblie;
+                    line-height: $tieudeheightmoblie;
+                    li{
+                        a{
+                            color: $maulogo !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
